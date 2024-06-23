@@ -393,3 +393,120 @@ div {
 .dot:first-child {
     background-color: #fff;
 }
+
+
+
+/* INSPIRATION FOR FUTURE GATEAWAYS  */
+
+
+.links {
+    background-color: #E7E7E2;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    color: #000;
+    padding-inline: 24px;
+    padding-block: 48px;
+    margin-inline: auto;
+}
+.support-links,
+.future-links-container {
+
+    border: none;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+   
+
+}
+
+.title {
+    font-size: 0.75rem;
+    font-weight: 300;
+    margin-bottom: 8px;
+    margin-top: 10px;
+    color: #222;
+    text-decoration: none;
+
+}
+
+.future-category {
+    
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    overscroll-behavior-inline: contain;
+    overflow-x: auto;
+
+}
+
+.future-category::-webkit-scrollbar {
+	/* WebKit */
+	width: 0;
+	height: 0;
+}
+
+.future-category > button {
+    display: flex;
+    background-color: transparent;
+    padding: 10px;
+    padding-bottom: 10px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #6a6a6a;
+    line-height: 14px;
+    white-space: nowrap;
+
+}
+
+button:focus {
+    border: none;
+}
+
+.future-category {
+    border-bottom: 1px solid #6a6a6a;
+}
+
+.future-category button:hover {
+    border-bottom: 2px solid #222;
+    
+}
+
+
+.future-links.left {
+    position: absolute;
+    left : 0;
+}
+
+.future-links.right {
+    position: absolute;
+    right: 0;
+}
+
+.future-links.left:hover,
+.future-links.right:hover {
+    border-bottom: none;
+}
+
+
+.future-links-container .places {
+    width: 100%;
+	margin: 0 auto;
+	/* background-color: rgb(93, 131, 238); */
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.5rem;
+}
+
+.places .place {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  
+}
+
+.places .place:last-child {
+   
+    margin-bottom: 1.5rem;
+  
+}
+
