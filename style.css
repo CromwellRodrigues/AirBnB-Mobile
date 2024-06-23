@@ -484,3 +484,40 @@ a {
 	color: #222;
 	font-size: 16px;
 }
+
+/* copyright currency */
+
+.country-currency {
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+
+.country-currency a {
+	text-decoration: none;
+	color: #0f0101;
+    font-size: 0.7em;
+    
+}
+
+.country-currency span {
+	float: center;
+	margin-left: 4rem;
+
+}
+
+.copyright {
+    font-size: 8px;
+    padding-bottom: 10px;
+    
+}
+
+ol {
+    display: inline;
+}
+
+ol li {
+    display : inline-block;
+    line-height: 26px;
+}
+
+
