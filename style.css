@@ -42,9 +42,9 @@ body {
 	height: 100vh;
 }
 
-@media (max-width: 400px) {
+@media (min-width: 300px) and (max-width: 430px) {
 	body {
-		width: 100%;
+		width: 90%;
 	}
 }
 
@@ -130,14 +130,16 @@ div {
 	display: inline-block;
 	/* flex: 1; */
 	color: var(--darkGrey);
-	font-size: var(--small75r);
+	font-size: 10px;
 	padding-top: 10px;
 	padding-left: 2px;
+    
 }
 
 .search-text p {
 	text-align: left;
 	color: var(--black);
+    font-size: var(--small75r);
 }
 
 .search-text a {
@@ -145,7 +147,7 @@ div {
 }
 
 .search-query {
-	font-size: var(--xsmall625r);
+	font-size: 8px;
 }
 
 /* CATEGORIES SCROLLER */
@@ -231,7 +233,9 @@ div {
 	border-bottom-width: 50%;
 }
 
-* MAIN CONTENT CONTAINER */ .main-content-container {
+* MAIN CONTENT CONTAINER */ 
+
+.main-content-container {
 	margin-top: 200px;
 	padding-bottom: 12px;
 	z-index: -1;
@@ -254,11 +258,29 @@ div {
 	margin-inline: auto;
 }
 
+.container-2 {
+    display: grid;
+	margin-bottom: 12px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 24px;
+	gap: 20px;
+	width: 100%;
+	height: auto;
+	color: var(--black);
+	grid-template-columns: 1fr;
+	padding-inline: 24px;
+	padding-block: 48px;
+	margin-inline: auto;
+
+}
+
 .card-container {
 	display: flex;
 	justify-content: space-between;
 }
 
+.container-2 .card,
 .container-1 .card {
 	background-color: var(--white);
 	position: relative;
@@ -267,7 +289,7 @@ div {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 0px;
+	margin-bottom: 12px;
 }
 
 .container-1 .card .box {
@@ -282,6 +304,7 @@ div {
 
 .container-1 .card .box .content {
 	padding: 0;
+    margin-bottom: 0px;
 }
 
 .box .content > img {
@@ -294,7 +317,7 @@ div {
 	background-size: cover;
 	align-content: center;
 	justify-content: center;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 }
@@ -327,7 +350,7 @@ div {
 	margin: 0 auto;
 }
 
-.live {
+.content-box-overlay .live {
 	position: absolute;
 	top: 10px;
 	left: 0px;
@@ -338,9 +361,9 @@ div {
 	display: inline-block;
 	border-radius: 18px;
 	letter-spacing: 0.2em;
-}
+} 
 
-.share {
+.content-box-overlay .share {
 	position: absolute;
 	top: 10px;
 	right: 0px;
@@ -386,8 +409,11 @@ div {
 	color: var(--black);
 	padding-inline: 24px;
 	padding-block: 48px;
-	margin-inline: auto;
+	/* margin-inline: auto; */
+    margin: 0 auto;
 }
+
+
 .support-links,
 .future-links-container {
 	border: none;
@@ -557,8 +583,9 @@ ol li {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
+    font-size: 10px;
 	text-align: center;
+    margin: 0 auto;
 }
 
 .footer > div {
