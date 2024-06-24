@@ -30,6 +30,7 @@ div {
 	display: block;
 }
 
+/* FIXED SECTION ON THE TOP  */
 .fixed-top {
 	max-width: 400px;
 	width: 100%;
@@ -304,7 +305,7 @@ div {
 	margin: 0 auto;
 }
 
-.content-box-overlay .live {
+.live {
 	position: absolute;
 	top: 10px;
 	left: 0px;
@@ -317,7 +318,7 @@ div {
 	letter-spacing: 0.2em;
 }
 
-.content-box-overlay .share {
+.share {
 	position: absolute;
 	top: 10px;
 	right: 0px;
@@ -453,7 +454,7 @@ button:focus {
 	margin-bottom: 1.5rem;
 }
 
-/* SUPPORT & HOSTING & ABOUT US */
+/* SUPPORT & HOSTING & ABOUT US SECTIONS */
 
 .footer,
 .country-currency-copyright-links,
@@ -485,7 +486,7 @@ a {
 	font-size: 16px;
 }
 
-/* copyright currency */
+/* copyright currency SECTION */
 
 .country-currency {
 	padding-bottom: 20px;
